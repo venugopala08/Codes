@@ -1,0 +1,2 @@
+class NextPermutation(object) :
+    
