@@ -1,5 +1,7 @@
 public class PowerFunction {
 
+    /* 
+
     public double myPow(double x, int n) {
         double res = 1.0;
 
@@ -32,6 +34,26 @@ public class PowerFunction {
         return res;
     }
 
+    */
+
+
+
+    public double myPow(double x, int n) {
+        double res = 1.0;
+        if(n<0){
+            x = 1/x;
+            n = -n;
+        }
+        while(n!=0){
+            if((n%2)!=0){
+                res *= x;
+            }
+            x*=x;
+            n >>>= 1;
+        }
+        return res;
+    }
+
     public static void main(String[] args) {
         PowerFunction pf = new PowerFunction();
         System.out.println(pf.myPow(2.0, 10));  // 1024.0
@@ -39,6 +61,7 @@ public class PowerFunction {
         System.out.println(pf.myPow(3.0, 5));   // 243.0
     }
 }
+
 
 
 /*
