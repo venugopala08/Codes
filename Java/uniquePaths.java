@@ -24,6 +24,11 @@ class Solution {
         // Step 5: The bottom-right cell contains the total number of paths
         return dp[m - 1][n - 1];
     }
+
+    public int longestOnes(int[] nums, int k) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'longestOnes'");
+    }
 }
 
 
